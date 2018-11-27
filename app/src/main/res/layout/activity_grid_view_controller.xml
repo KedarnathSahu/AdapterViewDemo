@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controller.ListViewController">
+    tools:context=".controller.GridViewController">
 
     <TextView
         android:id="@+id/textView"
@@ -16,13 +16,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/simple_gridview"
-        app:layout_constraintBottom_toTopOf="@+id/simpleListView"
+        app:layout_constraintBottom_toTopOf="@+id/simpleGridView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/simpleListView"
+    <GridView
+        android:id="@+id/simpleGridView"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toTopOf="@id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simpleListView" />
+        app:layout_constraintTop_toBottomOf="@+id/simpleGridView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -53,13 +53,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/custom_gridview"
-        app:layout_constraintBottom_toTopOf="@id/customListView"
+        app:layout_constraintBottom_toTopOf="@id/customGridView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider" />
 
-    <ListView
-        android:id="@+id/customListView"
+    <GridView
+        android:id="@+id/customGridView"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
@@ -85,7 +85,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/customListView"
+        app:layout_constraintTop_toBottomOf="@+id/customGridView"
         android:onClick="nextPage"/>
-
 </android.support.constraint.ConstraintLayout>

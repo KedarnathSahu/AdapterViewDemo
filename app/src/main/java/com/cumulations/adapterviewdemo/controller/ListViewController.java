@@ -1,5 +1,6 @@
 package com.cumulations.adapterviewdemo.controller;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -93,5 +94,7 @@ public class ListViewController extends AppCompatActivity {
     }
 
     public void nextPage(View view) {
+        Intent i=new Intent (this,GridViewController.class);
+        startActivity(i);
     }
 }
