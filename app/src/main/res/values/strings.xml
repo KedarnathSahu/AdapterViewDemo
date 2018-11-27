@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdapterViewDemo</string>
+    <string name="custom_listview">Custom ListView</string>
+    <string name="simple_listview">Simple ListView</string>
+    <string name="next">Next</string>
+    <string name="xxx">XXX</string>
+    <string name="name">Name</string>
+    <string name="team">Team</string>
+    <string name="avatar">Avatar</string>
+</resources>
