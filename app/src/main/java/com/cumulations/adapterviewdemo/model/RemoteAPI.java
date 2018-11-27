@@ -1,7 +1,6 @@
-package com.cumulations.adapterviewdemo.Model;
+package com.cumulations.adapterviewdemo.model;
 
 import java.util.List;
-import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;

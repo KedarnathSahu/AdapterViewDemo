@@ -1,5 +1,5 @@
 
-package com.cumulations.adapterviewdemo.Model;
+package com.cumulations.adapterviewdemo.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

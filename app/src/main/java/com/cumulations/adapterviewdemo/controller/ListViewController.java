@@ -1,4 +1,4 @@
-package com.cumulations.adapterviewdemo.Controller;
+package com.cumulations.adapterviewdemo.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.cumulations.adapterviewdemo.Model.Data;
-import com.cumulations.adapterviewdemo.Model.RemoteAPI;
+import com.cumulations.adapterviewdemo.model.Data;
+import com.cumulations.adapterviewdemo.model.RemoteAPI;
 import com.cumulations.adapterviewdemo.R;
 import com.cumulations.adapterviewdemo.adapter.DataAdapter;
 
