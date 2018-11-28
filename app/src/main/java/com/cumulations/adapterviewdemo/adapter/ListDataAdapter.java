@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class DataAdapter extends BaseAdapter {
+public class ListDataAdapter extends BaseAdapter {
 
     Context applicationContext;
     ArrayList<String> names;
@@ -23,7 +23,7 @@ public class DataAdapter extends BaseAdapter {
 
     LayoutInflater inflater;
 
-    public DataAdapter(Context applicationContext, ArrayList<String> names, ArrayList<String> teams, ArrayList<String> imageurls) {
+    public ListDataAdapter(Context applicationContext, ArrayList<String> names, ArrayList<String> teams, ArrayList<String> imageurls) {
         this.applicationContext = applicationContext;
         this.names = names;
         this.teams = teams;
@@ -51,7 +51,7 @@ public class DataAdapter extends BaseAdapter {
 
         if (convertView == null) {
             inflater = (LayoutInflater) applicationContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_item, parent,false);
+            convertView = inflater.inflate(R.layout.custom_list_item, parent,false);
 
             holder = new ViewHolder();
             holder.imageView = convertView.findViewById(R.id.imageView);

@@ -9,4 +9,6 @@
     <string name="name">Name</string>
     <string name="team">Team</string>
     <string name="avatar">Avatar</string>
+    <string name="custom_spinner">Custom Spinner</string>
+    <string name="simple_spinner">Simple Spinner</string>
 </resources>

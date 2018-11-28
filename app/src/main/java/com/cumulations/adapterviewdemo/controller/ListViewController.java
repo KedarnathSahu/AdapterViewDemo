@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.cumulations.adapterviewdemo.model.Data;
 import com.cumulations.adapterviewdemo.model.RemoteAPI;
 import com.cumulations.adapterviewdemo.R;
-import com.cumulations.adapterviewdemo.adapter.DataAdapter;
+import com.cumulations.adapterviewdemo.adapter.ListDataAdapter;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class ListViewController extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list_view_controller);
         simpleListView = findViewById(R.id.simpleListView);
         customListView = findViewById(R.id.customListView);
 
@@ -76,7 +76,7 @@ public class ListViewController extends AppCompatActivity {
 //        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListViewController.this, android.R.layout.simple_list_item_1, names);
 //        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListViewController.this, android.R.layout.simple_list_item_1, android.R.id.text1, names);
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListViewController.this, R.layout.item_listview, R.id.textView3, names);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListViewController.this, R.layout.simple_list_item, R.id.textView3, names);
         simpleListView.setAdapter(adapter);
 
         simpleListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -89,7 +89,7 @@ public class ListViewController extends AppCompatActivity {
     }
 
     private void setCustomListView(ArrayList<String> names, ArrayList<String> teams, ArrayList<String> imageurls) {
-        final DataAdapter adapter = new DataAdapter(getApplicationContext(), names, teams, imageurls);
+        final ListDataAdapter adapter = new ListDataAdapter(getApplicationContext(), names, teams, imageurls);
         customListView.setAdapter(adapter);
     }
 
